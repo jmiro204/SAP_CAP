@@ -23,3 +23,37 @@ File or Folder | Purpose
 ## Learn More
 
 Learn more at https://cap.cloud.sap/docs/get-started/.
+
+## Learn More SAP CAP
+
+## GITHUB 
+•	Inicializar -> git init
+•	Configurar
+o	    git config --global user.email juliomiro204@gmail.com
+o	    git config --global user.name "jmiro204"
+•	Agregar remote/origin -> git remote add origin https://github.com/jmiro204/SAP_CAP.git
+•	Agregar archivos -> git add .
+•	Commit -> git commit -m "First Commit CAP"
+•	Push -> git push origin master
+o	    En caso de error (error: src refspec master does not match any) ejecutar comando -> git checkout -b master
+o	    Luego el push otra vez
+
+## SQLITE
+•	Instalar SQLITE npm i @cap-js/sqlite
+•	Verificar SQLITE cds env requires.db
+•	Deploy (Crear tablas y registros de CSV si existen) cds deploy --to sqlite
+•	Crear conexión
+o	    En SQLTools se agrega la conexión
+	        Ruta fichero db-sqlite del proyecto
+
+
+## Proyecto CAP
+	Ejecutar nuestro proyecto CAP: cds wath o npm run
+
+Se puede modularizar el codigo por contexto o agrupación de entidades
+ 
+Entity sap.logali.groupA{ 
+    Entity A{}
+    Entity B{}
+}
+
